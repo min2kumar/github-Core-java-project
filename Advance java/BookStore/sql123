@@ -1,0 +1,96 @@
+create table data(
+id varchar(10) primary key,
+uname varchar(30),
+name varchar(30),
+email varchar(30),
+csname varchar(30),
+mobile varchar(12),
+pwd varchar(25),
+unique(uname),
+unique(mobile)
+)
+
+
+
+
+create table data(
+id varchar(10) primary key,
+uname varchar(30),
+name varchar(30),
+email varchar(30),
+csname varchar(30),
+mobile varchar(12),
+pwd varchar(25),
+unique(uname),
+unique(mobile)
+)
+
+
+
+
+
+
+
+
+
+
+
+drop table data;
+
+select * from data
+insert into data values(1,'mintu','mintuc64@gmail.com','tolani college of commerce','8655387871','shailadevi')
+select name,pwd from data where name='mintu'
+
+
+
+create table message
+( 
+sender  varchar(30),
+name varchar(20),
+msg varchar(250),
+date varchar(40)
+)
+
+drop table book
+
+
+create table book
+(
+ id int primary key,
+name varchar(35),
+  author varchar(30),
+  btype varchar(32),
+   price int,
+
+  link varchar(max),
+     unique(name)
+)
+
+
+drop table tempblock
+
+create table tempblock
+(
+uname varchar(30) primary key
+)
+
+select * from book
+
+delete from message
+
+create table maintain
+(
+mode varchar(10) primary key
+)
+
+drop table tempblock
+
+create table tempblock
+(
+uname varchar(30) primary key
+)
+
+create table maintain
+(
+mode varchar(10) primary key
+)

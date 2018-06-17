@@ -1,0 +1,15 @@
+select * from info
+
+
+drop table info
+create table info
+(
+  id int primary key,
+  name varchar(35),
+  dept varchar(20),
+  salary int
+
+
+)
+
+

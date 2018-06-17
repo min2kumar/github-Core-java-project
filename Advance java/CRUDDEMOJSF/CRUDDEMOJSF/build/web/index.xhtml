@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>JSF HOME PAGE</title>
+    </h:head>
+    <h:body>
+        <h:panelGroup rendered="#{ empty productbean.products}">
+
+            <h2>No Employee  Found !! Please Add Employee In The Organization</h2>
+
+
+        </h:panelGroup>
+
+ 
+        <h:panelGroup>
+            <center>
+                <h:form>
+                    <table>
+                        <tr>
+                            <td><h:outputLabel>Enter  Name</h:outputLabel></td>
+                            <td><h:inputText value="#{productbean.p.name}"  required="true"/></td>
+
+                        </tr>
+                       
+                        <tr> 
+                            <td>Enter Gender</td>
+                            <td> <h:selectOneRadio  id="gen" value="#{productbean.p.gender}">
+                                  
+                                    <f:selectItem id="gen1"  itemValue="male" itemLabel="Male"/>
+                                    <f:selectItem  id="gen2" itemValue="female" itemLabel="Female"/>
+                                            
+                                </h:selectOneRadio></td>
+           
+
+                        </tr>
+                        <tr>
+                            <td><h:outputLabel>Enter age </h:outputLabel></td>
+                            <td><h:inputText value="#{productbean.p.age}"/></td>
+
+                        </tr>
+                         <tr>
+                            <td><h:outputLabel>Enter Dept</h:outputLabel></td>
+                            <td><h:inputText value="#{productbean.p.dept}"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><h:outputLabel>Enter salary </h:outputLabel></td>
+                            <td><h:inputText value="#{productbean.p.salary}"/></td>
+
+                        </tr>
+                        <tr>
+                            <td><h:commandButton  value="Add Product" ></h:commandButton></td>
+                            <td><h:commandButton  value="Reset"></h:commandButton></td>
+                        </tr>
+
+                    </table>
+                </h:form>
+            </center>
+        </h:panelGroup>        
+        
+        <h:panelGroup>
+            
+            
+            <h:dataTable>
+                
+                <h:head>Name</h:head>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                
+                
+                
+            </h:dataTable>
+            
+            
+        </h:panelGroup>
+        
+        
+    </h:body>
+</html>
+
