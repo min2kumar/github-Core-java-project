@@ -1,0 +1,86 @@
+Revision:
+Wrapper class
+Generics
+Boxing
+Unboxing
+Collection
+List
+
+Topics for today:
+List
+Set
+Map
+Deque
+Comparable
+Comparator
+
+Collection Interface
+
+List Interface
+ordered collection of elements
+has index position
+list allows duplicate values
+
+Set Interface
+not ordered collection of elements
+does not have index position
+does not allow duplicate values, only unique
+
+Set = no duplicate values, only unique
+Tree = sorted
+
+Deque Interface
+pronounced as "deck"
+full form of deque is "double ended queue"
+supports both stack + queue
+supports both LIFO + FIFO
+LIFO = Last In First Out
+FIFO = First In First Out
+add() and remove() = FIFO
+push() and pop() = LIFO
+
+
+Map Interface
+stores data in key-value pairs
+if we pass same key, but with different values, it will overrite the value
+
+ordering Collections:
+Comparable Interface
+java.lang package
+overrides compareTo() method
+sort logic and business logic in same class
+provides 1 sort option
+
+Comparator Interface
+java.util package
+overrides compare() method
+sort logic and business logic in separate classes
+provides numerous sort options
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

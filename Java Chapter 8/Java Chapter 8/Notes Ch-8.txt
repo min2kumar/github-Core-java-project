@@ -1,0 +1,154 @@
+Revision
+Chapter 1 - Introduction
+Chapter 2 - Java Syntax and Class Review
+Chapter 3 - Encapsulation and Subclassing
+Chapter 4 - Java Class Design
+Chapter 5 - Advanced Class Design
+Chapter 6 - Java Interfaces
+Chapter 7 - Generics and Collections
+Chapter 8 - String Processing
+Chapter 9 - Exceptions and Assertions
+
+Topics for Today:
+String split() method
+StringTokenizer class
+Exceptions
+Assertions
+
+String split() method
+StringTokenizer class
+predefined class in java.util package
+
+Exceptions
+can be handled
+affects the normal flow of program
+problem within the application
+eg: ArithmeticException = divide by zero
+
+Errors 
+cannot be handled
+some problem which arises outside the scope of application
+eg: OutOfMemoryError
+
+Categories of Exception
+> Checked Exception
+> Unchecked Exception
+
+Checked Exceptions
+Handle with care
+Compile time Exceptions
+Handle or Declare Rule
+eg: FileNotFoundException, IOException, Exception
+
+Unchecked Exceptions
+no need to handle with care
+Run Time Exceptions
+no such Handle or Declare rule
+eg: ArithmeticException, NullpointerException, ArrayIndexOutOfBoundException, RuntimeException
+
+
+Handling an Exception = using try..catch block
+
+Declaring an Exception = using throws keyword
+
+try block
+>all the statements which might raise an exception, are placed in the try block
+>try block should immediately be followed by catch block
+
+
+catch block
+>is an exception handler
+>it specifes what to do, in case an exception occurs in the try block
+
+catch block
+-multiple catch block
+try
+{}
+catch()
+{}
+catch()
+{}
+
+the sequence is imp, first catch specific exceptions, then catch generic exceptions
+first child, then parent
+
+-multi catch block = new in Java 7
+try
+{}
+catch(Exception1|Exception2 ex)
+{}
+
+alternatives in multi catch block cannot share inheritence relationship
+means they cannot be parent-child
+
+
+finally block
+gets executed irrespective of whether exception occurs or not
+finally is used to close all the opened resources.
+comes after catch block, or try block
+
+Possibilities:
+>
+try
+{}
+catch()
+{}
+
+>
+try
+{}
+catch()
+{}
+catch()
+{}
+
+>
+try
+{}
+catch()
+{}
+finally
+{}
+
+>
+try
+{}
+finally
+{}
+
+try-with-resource statement
+eliminates the lengthy finally block
+it automatically closes all the opened resources.
+new in Java 7
+
+eg:
+Before
+try
+{}
+catch()
+{}
+finally
+{}
+
+After
+try()
+{}
+catch()
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

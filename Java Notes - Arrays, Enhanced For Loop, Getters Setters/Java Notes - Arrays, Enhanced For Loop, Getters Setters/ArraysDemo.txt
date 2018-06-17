@@ -1,0 +1,90 @@
+Entity class
+Getters and Setters
+IS-A relationship and HAS-A relationship
+Encapsulation
+Subclassing/Inheritence
+
+Demo1:
+Want to accept and display Manager details like id,name, salary, dept using Entity class
+
+Demo2:
+
+class Manager
+{
+int id;
+public void setId(int id)
+{
+this.id=id;
+}
+public int getId()
+{
+return id;
+}
+}
+
+Output:
+54321
+5432
+543
+54
+5
+
+54321
+4321
+321
+21
+1
+
+Arrays:
+is a collection of elements of the same data type, stored in adjacent memory locations
+have an index position
+have a size
+
+> Declare an Array - specify the data type
+eg;
+int[] marks;
+String[] names;
+float[] price;
+char[] grade;
+
+> Instantiate an Array - specify the size
+eg:
+marks = new int[5];
+names = new String[4];
+price = new float[3];
+grade = new char[4];
+
+> Initialize an Array
+marks[0] = 75;
+marks[1] = 75;
+marks[2] = 75;
+marks[3] = 75;
+marks[4] = 75;
+
+names[0] = "Ethan";
+names[1] = "Arsh";
+names[2] = "Sadaf";
+names[3] = "Susan";
+
+When we do all together - declaring, instantiating and initializing, no need to specify the size
+int[] marks = new int[]{75,85,84,65,47};
+String[] names = new String[]{"Ethan","Arsh","Sadaf","Susan"};
+
+When we do all together - declaring, instantiating and initializing, no need to instantiate also,
+
+int[] marks = {75,85,84,65,47};
+String[] names = {"Ethan","Arsh","Sadaf","Susan"};
+
+Enhanced For Loop
+used to work with Array
+
+
+
+
+
+
+
+
+
+
+

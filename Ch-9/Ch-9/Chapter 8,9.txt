@@ -1,0 +1,162 @@
+Topics for Today:
+Exceptions and Assertions
+File IO
+
+Exceptions
+Error
+
+Exceptions can be handled
+Errors cannot be handled
+
+Exception
+java.lang package
+base class for all categories of exceptions
+
+2 categories of Exception:
+=> Checked Exceptions
+=> Unchecked Exceptions
+
+Checked Exceptions
+compile time exception
+handle with care
+eg: FileNotFoundException, IOException, Exception
+Handle or Declare Rule
+
+Unchecked Exceptions
+runtime exception
+no need to handle with care
+eg: RuntimeException, ArithmeticException, NullPointerException, IndexOutOfBoundsException
+no such Handle or Declare Rule
+
+Handling an Exception
+use try..catch block
+
+Declaring an Exception
+use throws keyword
+
+try block
+-all the statements which might raise an exception, are placed in the try block
+-try block should immediately be followed by catch block
+
+catch block
+-is the exception handler
+-it specifies what to do, in case an exception raised in the try block
+
+
+ArithmeticException class
+RuntimeException class
+Exception class
+Throwable class
+Object class
+
+
+catch:
+-> multiple catch block
+sequence is imp
+first catch the specific exceptions, then catch generic exceptions
+first child, then parent
+
+-> multi catch block - new in Java 7
+try
+{}
+catch(Exc1|Exc2 ex)
+{}
+
+alternatives in multi catch block cannot share inheritence relationship
+they cannot be parent-child
+
+finally block
+gets executed irrespective whether exception occurs or not.
+is used to close all the opened resources
+while closing resources, exception might be raised, so this increases our code.
+
+Possibilities:
+->
+try
+{}
+catch()
+{}
+
+->
+try
+{}
+catch()
+{}
+catch()
+{}
+
+->
+try
+{}
+catch()
+{}
+finally
+{}
+
+->
+try
+{}
+finally
+{}
+
+try-with-resource statement
+new in Java 7
+replaces the lengthy finally block
+
+Before:
+try
+{}
+catch()
+{}
+finally
+{}
+
+After:
+try()
+{}
+catch()
+{}
+
+Declaring an Exception
+-use throws keyword
+
+calling environment -main() 
+called environment - m1()
+
+whenever a method declares an exception, it is simply propogating the exception from called environment to the calling environment.
+
+throw keyword
+used to throw/raise an exception
+
+Predefined exceptions can be raised automatically or it can be thrown manually using throw keyword
+Custom exception/user defined exeptions needs to be manually thrown using throw keyword.
+
+User defined Exception:
+is a checked exception
+
+Assertion
+means assumption
+assertion is a condition that is assumed to be true, when we are executing a set of statements.
+if the condition evaluates false, then an AssertionError is thrown
+AssertionError is unchecked in nature.
+assertions are disabled by default, it needs to be enabled.
+
+To compile:
+javac filename.java
+
+to run:
+java -ea filename
+OR
+java -enableassertions filename
+
+Demo1:
+
+
+
+
+
+
+
+
+
+

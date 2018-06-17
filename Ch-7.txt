@@ -1,0 +1,109 @@
+Topics:
+Generics
+Wrapper class
+Collections
+List
+Set
+Map
+Deque
+Ordering collections
+
+Generics:
+eg:
+int age;
+String name;
+
+age will accept only integers
+name will accept only string, it means the data type is fixed.
+But in case of generics, the type is not determined in advance.
+Generics provide type safety to our code.
+Generics support only reference type, not primitives.
+
+primitives - Wrapper class
+byte - Byte class
+short - Short class
+int - Integer class
+long - Long class
+float - Float class
+double - Double class
+char - Character class
+boolean - Boolean class
+value types - reference type
+
+Boxing - converting value type to reference type
+Unboxing - converting reference type to value type
+
+Steps:
+>Create a new java Application - GenericsDemo
+>Create 4 POJO classes - Student and Faculty, TestStudent and TestFaculty
+>Student HAS-A id,name,age; along with constructor, getters and setters
+>Faculty HAS-A id,name,salary; along with constructor, getters and setters
+-In TestStudent, create a reference type of Student, similarly in TestFaculty create a reference type of Faculty. along with constructor, getters and setters
+-rom main() method, create object of Student and Faculty
+-Now create object of your TestStudent and TestFaculty
+->Now create another POJO class - Customer class
+>Customer class HAS-A id, name, email; along with constructor, getters and setters
+-Now problem is that TestStudent and TestFaculty will not accept Customer reference, as they are tightly bound with Student and Faculty reference.
+-So we will solve the problem using Generics
+-Create a Generic class TestAny, as shown below
+public class TestAny <T>
+{
+    private T t;
+
+    public TestAny() {
+    }
+
+    public TestAny(T t) {
+        this.t = t;
+    }
+
+    public T getT() {
+        return t;
+    }
+
+    public void setT(T t) {
+        this.t = t;
+    }
+    
+}
+T = Type
+E = Element
+K = Key
+V = Value
+
+Collection API
+API = Application Programming Interface
+API is a set of predefined classes and interfaces
+Collection API are in java.util package
+
+-Collection Interface
+base interface for all Collections in Java
+-java.util package
+
+2 sub interface:
+- List Interface
+- Set Interface
+
+>List Interface
+predefined interface in java.util package
+-it is an ordered collection of elements
+-has an index position
+ArrayList is an implementation of List
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

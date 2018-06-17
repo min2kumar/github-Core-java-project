@@ -1,0 +1,18 @@
+DAO Pattern
+it is a design pattern
+
+it separates your business logic with persistence logic
+business logic = business methods
+persistence logic = persistence methods
+business logic to be kept in a POJO Class
+and persistence logic to be kept separate in an interface
+
+eg:
+class = Employee
+variable = id, name, salary, email, dept
+object = e1,e2,e3, etc
+methods:
+business method = work on variables
+getId(), getName(), setId(), setName(), changeName(), raiseSalary()
+persistence method = work on objects
+addEmployee(), updateEmployee(), removeEmployee(), findEmployeeById(), getAllEmployees()
