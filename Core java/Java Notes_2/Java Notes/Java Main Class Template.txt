@@ -1,0 +1,11 @@
+<#if package?? && package != "">
+package ${package};
+
+</#if>
+public class ${name} 
+{
+    public static void main(String[] args) 
+    {
+        
+    }
+}

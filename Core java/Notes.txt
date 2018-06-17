@@ -1,0 +1,53 @@
+abstract
+static
+keyword applied to variables and methods
+
+static variable:
+is single copy in memory
+all objects share same copy of static variable.
+
+eg:
+class Student
+{
+int id;
+}
+
+Student s1 = new Student();
+Student s2 = new Student();
+
+eg: WAP to count the number of objects created for a class
+
+
+final keyword
+applied to class, variable, method
+final class = cannot be subclassed/extended/inherited
+final method = cannot be overridden in subclass
+final variable = cannot change their value, once initialized
+
+a variable which is static and final both, is a constant
+
+Enums:
+stands from Enumeration
+set of fixed constants
+eg:
+Days of a Week, Months in a Year
+Blood Group
+Gender
+
+eg:
+Profile.java - enum
+Mobile.java - class
+TestEnum.java - main class
+
+
+
+
+
+
+
+
+
+
+
+
+

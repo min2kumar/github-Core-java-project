@@ -1,0 +1,96 @@
+Topics for Today:
+-Enums
+-Singleton Design Pattern
+-Nested Class
+
+1. Enums
+-stands for Enumeration
+-it is a set of fixed constants
+eg: Gender - Male/Female
+eg: Days - Sun..Sat
+eg: Months - Jan..Dec
+
+Demo:
+1. Mobile HAS-A profiles like General, Silent, Vibrate, Outdoor, Meeting, Flight, etc
+Profile.java - Enum
+Mobile.java - POJO class
+Mobile HAS-A Profile
+Main class - will create object of Mobile class and will call its method
+
+2. Computer HAS - A mode like Startup, Shutdown, Restart, Sleep, Signout.
+Mode.java - Enum
+Computer.java - POJO Class
+Computer HAS-A Mode
+Main class - will create object of Computer class and will call its methods
+
+3.
+Direction.java - Enum - has 8 constants
+Compass.java - POJO class
+Compass HAS-A Direction
+Main class - will create object of Compass and call its changeDirection() method
+
+Design Patterns
+means how you structure your APIs
+API - Application Programming Interface
+-collection of classes, interfaces, enums, and relationship
+
+Singleton Design Pattern
+- ensures that only 1 object is created for a Java class
+- if anybody wants an object, they can reuse the same object
+
+Steps:
+-Create a new project - SingletonDemo
+-Create a new Class - MyClass
+-Try to create multiple objects in main() method.
+-It will allow you to create multiple objects
+-Now we need to implement Singleton pattern in MyClass
+
+-Create a private static final reference to the single instance
+-Make the default no-arg constructor private 
+-Implement a public static factory method to return the single instance
+
+Relationships among classes:
+1. IS-A
+B IS-A A
+eg;
+class A
+{}
+class B extends A
+{}
+
+2. HAS-A
+a. Association - one class is a part of another class, and it can exists independently
+eg:
+class A
+{
+B b = new B();
+}
+class B
+{}
+class C
+{
+B b = new B();
+}
+
+b. Composition - one class contains another class; and also controls the lifeline of the class
+eg: nested class
+class A
+{
+	class B
+	{}
+}
+Here, no body can create object of class B, other than A
+In other words, object of class B can exists, only if object of class A exists
+
+Outer class can access the member of the inner class only through object of inner class
+Inner class can access the members of the outer class directly, without creating object
+
+
+
+
+
+
+
+
+
+

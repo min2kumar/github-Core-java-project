@@ -1,0 +1,52 @@
+Project
+Main class - InheritenceDemo
+Employee - id,name, gender, age, salary
+Manager - dept
+Director - budget
+
+Access Specifiers in Java
+
+> public
+> protected
+> default
+> private
+
+>public - same class can use, other class in same file can use, other file in same package can use, subclass in other package can use, other package who is not a subclass
+
+>protected - same class can use, other class in same file can use, other file in same package can use, subclass in other package can use.
+
+>default - same class can use, other class in same file can use, other file in same package can use.
+
+>private - same class can use.
+
+Summary
+private - my class
+default - my package
+protected - my child
+public - every body
+
+Object class
+predefined class in java.lang package
+it is the super class of all Java classes
+including arrays, enums, Interfaces.
+
+what we write...
+class Student
+{}
+
+what the compiler inserts...
+class Student extends Object
+{}
+
+>toString() method
+
+
+
+
+
+
+
+
+
+
+

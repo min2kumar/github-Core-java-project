@@ -1,0 +1,80 @@
+Exit condition
+
+--Menu--
+1. Enter Data
+2. Display Data
+3. Exit
+
+Entity class
+Arrays
+Encapsulation
+accept() and display()
+Subclassing/Inheritence
+
+DRY concept
+Don't Repeat Yourself
+
+Student
+has id, name, age, marks
+
+Faculty
+has id, name, age, salary
+
+Steps:
+> Create a new Java Application - InheritenceDemo
+> Create 2 Java classes - Student, Faculty
+> Student HAS-A id, name, age, marks
+> Faculty HAS-A id, name, age, salary
+> Now if you notice, id,name and age are repeated in both classes - Student and Faculty
+> So we will refactor the code, to create a new class - Human
+> Human will have id,name and age- common attributes
+> Now remove the common attributes from Student and Faculty
+> Student IS-A Human
+> Faculty IS-A Human
+> Now define accept and display method in Human class
+> Implement Encapsulation in all 3 java classes
+> In Student class, override accept() and display() methods
+
+Steps: Task 3.1
+>Create a new Project
+> Create 3 java classes - Book.java, SoftwareBook.java, HardwareBook.java
+> Book HAS-A authorname, title, price, no_of_pages
+> SoftwareBook IS-A Book
+> HardwareBook IS-A Book
+> SoftwareBook HAS-A software Version, and software name
+> HardwareBook HAS-A hardware category and hardware publisher
+> Define accept and display methods in Book class to accept and display common variables
+> Encapsulate all fields/variable
+> Override accept() and display() methods in your subclases
+> Delegate from subclass method to super class method using super keyword
+> Subclass method will accept() and display() specific variables
+
+Overloading
+
+Polymorphism:
+> static
+eg: Overloading
+
+> dynamic
+eg: Overriding
+
+Steps:
+> Create a new Project
+> Define a display method - no argument
+> Invoke the display method
+> Define a display method - with String argument
+> Invoke the display method
+> Define a display method - with String and int argument
+> Invoke the display method
+
+VarArgs = Variable Length of Arguments
+
+Task:
+Lab Guide
+Chapter 3 Task 1,2
+Chapter 4 Task 2
+
+
+
+
+

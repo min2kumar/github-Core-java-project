@@ -1,0 +1,32 @@
+Entity Class
+eg:
+Student, Employee, Faculty, Customer, Manager
+
+-variables
+-methods
+
+WAP to accept student details like fname, lname, age, emailid, from user and diplay it using Entity class
+
+
+HAS-A relationship
+Student HAS-A firstname,lastname,emailid,age,etc
+relationship between class and its variables
+
+IS-A relationship
+
+Encapsulation means hide irrelevant data
+How to implement Encapsulation in a Java Application?
+Steps:
+> Make member variables private
+> Make member methods public
+
+Lab Guide first 5 problems
+
+
+
+
+
+
+
+
+
